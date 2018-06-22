@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rebase Demo</title>
+</head>
+<body>
+  <h1>Rebase Demo</h1>
+  <p>This is how you rebase</p>
+  master and testing branch
+
+  STEPS:
+    - From branch run `git rebase master` (rebase will stop if there are any conflicts)
+    - Then run `git checkout master` (or autos-development in our case)
+    - From master run `git merge branchName`
+
+  Other things to look at:
+    If your branch ever diverges from origin/master
+    You can look into doing
+    `git pull --rebase`
+    Which will pull and merge all the commits from origin/master and rebase your commits to master
+
+</body>
+</html>
