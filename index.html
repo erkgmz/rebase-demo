@@ -21,6 +21,15 @@
     You can look into doing
     `git pull --rebase`
     Which will pull and merge all the commits from origin/master and rebase your commits to master
+  
+  Step 4: 
+    Now we rebase. From your master branch run the following:
+      - `git checkout branchName`
+      - `git rebase master` (moves your commit history to the base of master)
+      - `git checkout master`
+      - `git merge branchName`
+
+  Voila! It's that easy.
 
 </body>
 </html>
