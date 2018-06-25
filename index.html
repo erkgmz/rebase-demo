@@ -10,30 +10,30 @@
   <h1>Rebase Demo</h1>
   <p>This is how you rebase</p>
 
-  Step 1: 
+  <p>Step 1:</p>
     Switch to autos-development and pull all of your changes before you make a new branch: 
       - `git fetch` (read here for more info on fetch https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch)
       - `git pull`
 
-  Step 2: 
+  <p>Step 2:</p>
     Now that autos-development is up-to-date, you will need to create a branch to do your work in:
       - `git checkout -b new-branch`
       - code code code...
 
-  Step 3: 
+  <p>Step 3:</p>
     Once work is complete, add and commit. It's best practice to have the latest version of master on your local before rebasing so we'll do a final fetch/pull:
       - `git add -A && git commit -m 'I did x on y and fixed z as well'` (that's a terrible commit message btw)
       - `git checkout master`
       - Repeat Step 1
 
-  Step 4: 
+  <p>Step 4:</p>
     Now we rebase. From your master branch run the following:
       - `git checkout branchName`
       - `git rebase master` (moves your commit history to the base of master)
       - `git checkout master`
       - `git merge branchName`
 
-  Step 5:
+  <p>Step :</p>
     After all of that is complete and you resolved and conflicts you had, you are ready to push. 
     With rebase, we will be pushing directly from the autos-development branch:
       - `git push`
